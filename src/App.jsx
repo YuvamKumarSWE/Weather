@@ -10,7 +10,11 @@ function App() {
     <div className="flex flex-col items-center w-screen min-h-screen">
       <Header />
       <Input setCity={setCity} />
-      <p className="mt-4 text-lg">Selected City: {city}</p>
+      {city === "" ? (
+        <p className="mt-4 text-xl text-white font-mono">Please enter a city name</p>
+      ) : (
+        <p className="mt-4 text-xl text-white font-mono">Selected City: {city}</p>
+      )}
       <Result city={city} />
     </div>
   );

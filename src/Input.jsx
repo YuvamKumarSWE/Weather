@@ -22,6 +22,8 @@ export default function Input({ setCity }) {
       >
         Search
       </button>
+      
+    
     </div>
   );
 }
