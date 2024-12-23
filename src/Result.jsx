@@ -13,6 +13,7 @@ export default function Result({ city }) {
         if (city === "") return;
 
         const getWeather = async () => {
+            setWeather(null);
             setLoading(true);
             setError(null);
             try {

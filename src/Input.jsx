@@ -17,7 +17,7 @@ export default function Input({ setCity }) {
         placeholder="Enter city name"
       />
       <button
-        className="p-2 ml-2 bg-blue-500 text-white rounded-md shadow-md"
+        className="p-2 ml-2 bg-slate-400 text-white rounded-md shadow-md"
         onClick={handleSearch} 
       >
         Search
